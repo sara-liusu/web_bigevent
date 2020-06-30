@@ -51,8 +51,8 @@ function getUserInfo() {
         // },
         // 无论成功还是失败，最终都会调用complete 函数
         complete: function (res) {
-            console.log('执行了complete回调');
-            console.log(res);
+            // console.log('执行了complete回调');
+            // console.log(res);
 
             // 在complete 回调函数中，可以使用res.responseJSON 拿到服务器响应回来的数据
             if (res.responseJSON.status == 1 && res.responseJSON.message == '身份认证失败') {
@@ -88,3 +88,20 @@ function renderAvater(user) {
 
     }
 }
+
+
+// function ajax() {
+//     $.ajax({
+//         type: 'get',
+//         url: '/api/xxinfo',
+//         success: function (res) {
+//             console.log(res)
+//         },
+//         error: function (error) {
+//             console.log(er)
+//         },
+//         complete: function () {
+//             console.log('不管你请求成功还是失败，这个回调都会执行；执行时间在success或者error之后')
+//         }
+//     })
+// }
