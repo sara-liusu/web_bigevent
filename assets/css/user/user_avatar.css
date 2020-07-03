@@ -63,8 +63,7 @@ body{
     display: flex;
     flex-direction: column;
     flex: 1;
-    align-items: center;;
-    
+    align-items: center;;  
 }
 
 /* 设置 img-preview 区域的样式 */
